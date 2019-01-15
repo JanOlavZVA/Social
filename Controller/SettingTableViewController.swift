@@ -7,29 +7,70 @@
 //
 
 import UIKit
+import SVProgressHUD
 
-class SettingTableViewController: UIViewController {
+protocol SettingTableViewControllerDelegate {
+    func updateUserInfor()
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class SettingTableViewController: UITableViewController {
 
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var usernnameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    var delegate: SettingTableViewControllerDelegate?
+    
+    @IBAction func saveBtn_TouchUpInside(_ sender: Any) {
+        if let profileImg = self.profileImageView.image, let imageData = UIImageJPEGRepresentation(profileImg, 0.1) {
+            SVProgressHUD.show(withStatus:"Waiting...")
+            
+            AuthService.updateUserInfor(username: usernnameTextField.text!, email: emailTextField.text!, imageData: imageData, onSuccess: {
+                SVProgressHUD.showSuccess(withStatus:"Success")
+                self.delegate?.updateUserInfor()
+            }, onError: { (errorMessage) in
+                SVProgressHUD.showError(withStatus:errorMessage)
+            })
+        }
+        
+    }
+    @IBAction func logoutBtn_TouchUpInside(_ sender: Any) {
+        
+        AuthService.logout(onSuccess: {
+            let storyboard = UIStoryboard(name: "Start", bundle: nil)
+            let signInVC = storyboard.instantiateViewController(withIdentifier: "SignInViewController")
+            self.present(signInVC, animated: true, completion: nil)
+        }) { (errorMessage) in
+            SVProgressHUD.showError(withStatus: errorMessage)
+        }
+    }
+    @IBAction func changeProfileBtn_TouchUpInside(_ sender: Any) {
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        present(pickerController, animated: true, completion: nil)
+    }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension SettingTableViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        print("did Finish Picking Media")
+        if let image = info["UIImagePickerControllerOriginalImage"] as? UIImage{
+            profileImageView.image = image
+        }
+        dismiss(animated: true, completion: nil)
     }
-    */
-
 }
+
+extension SettingTableViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("return")
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+
+

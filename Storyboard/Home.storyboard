@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
         <scene sceneID="msA-aM-zcz">
             <objects>
-                <viewController id="ZeP-ac-4dh" customClass="HomeViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZeP-ac-4dh" customClass="HomeViewController" customModule="Social" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wGN-oX-yKn"/>
                         <viewControllerLayoutGuide type="bottom" id="cWe-XL-AUU"/>
@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" rowHeight="521" id="VoG-1z-zvf" customClass="HomeTableViewCell" customModule="InstagramClone" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" rowHeight="521" id="VoG-1z-zvf" customClass="HomeTableViewCell" customModule="Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="521"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VoG-1z-zvf" id="2Rz-KO-OMQ">
@@ -100,7 +100,7 @@
                                                             </constraints>
                                                             <state key="normal" image="Icon_Mute"/>
                                                             <connections>
-                                                                <action selector="volumeButton_TouchUpInSide:" destination="VoG-1z-zvf" eventType="touchUpInside" id="a22-S0-flI"/>
+                                                                <action selector="volumeButton_TouchUpInSide:" destination="VoG-1z-zvf" eventType="touchUpInside" id="4i0-EL-HSO"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -150,17 +150,17 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="captionLabel" destination="8HR-Am-BIT" id="Fuv-n1-tln"/>
-                                            <outlet property="commentImageView" destination="X5F-xv-STt" id="xHv-z8-PEl"/>
-                                            <outlet property="heightConstraintPhoto" destination="yRj-mq-bwA" id="0FF-xe-AWe"/>
-                                            <outlet property="likeCountButton" destination="7uj-fO-jwZ" id="aqJ-Wy-hEn"/>
-                                            <outlet property="likeImageView" destination="vMY-aN-Ui7" id="CLR-jf-8FE"/>
-                                            <outlet property="nameLabel" destination="fEI-ug-Ldb" id="X0c-6D-SRe"/>
-                                            <outlet property="postImageView" destination="JAf-Ao-6LM" id="MAn-lZ-PMd"/>
-                                            <outlet property="profileImageView" destination="5Bk-lh-6ZQ" id="S40-av-Gz8"/>
-                                            <outlet property="shareImageView" destination="YPi-Uv-RhE" id="h9d-el-ehF"/>
-                                            <outlet property="volumeButton" destination="Oxl-hb-zbb" id="vlG-G9-uTm"/>
-                                            <outlet property="volumeView" destination="UZ5-nc-mjO" id="bnn-Yv-TKw"/>
+                                            <outlet property="captionLabel" destination="8HR-Am-BIT" id="eNE-r8-063"/>
+                                            <outlet property="commentImageView" destination="X5F-xv-STt" id="ysC-3h-qt7"/>
+                                            <outlet property="heightConstraintPhoto" destination="yRj-mq-bwA" id="TWY-ih-fZK"/>
+                                            <outlet property="likeCountButton" destination="7uj-fO-jwZ" id="Ixt-xh-S8e"/>
+                                            <outlet property="likeImageView" destination="vMY-aN-Ui7" id="fOZ-4B-FdX"/>
+                                            <outlet property="nameLabel" destination="fEI-ug-Ldb" id="W44-Rg-cvQ"/>
+                                            <outlet property="postImageView" destination="JAf-Ao-6LM" id="bDW-U3-n94"/>
+                                            <outlet property="profileImageView" destination="5Bk-lh-6ZQ" id="hWG-4p-QnZ"/>
+                                            <outlet property="shareImageView" destination="YPi-Uv-RhE" id="3y3-df-3va"/>
+                                            <outlet property="volumeButton" destination="Oxl-hb-zbb" id="4lP-2m-yGj"/>
+                                            <outlet property="volumeView" destination="UZ5-nc-mjO" id="r1v-j9-uVj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -179,17 +179,23 @@
                             <constraint firstItem="2V7-TV-WOy" firstAttribute="top" secondItem="lBI-Vj-Fsn" secondAttribute="top" id="zPO-t9-9xR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="Xwx-Sg-AIS"/>
+                    <navigationItem key="navigationItem" title="Home" id="Xwx-Sg-AIS">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Dwh-Hp-v3F">
+                            <connections>
+                                <segue destination="eMk-62-TPu" kind="show" id="Mzt-Kc-FsQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="activityIndicatorView" destination="W9U-fS-EhU" id="pdU-f5-iW4"/>
-                        <outlet property="tableView" destination="2V7-TV-WOy" id="Df0-ZL-dI2"/>
+                        <outlet property="activityIndicatorView" destination="W9U-fS-EhU" id="hAU-Gl-4LN"/>
+                        <outlet property="tableView" destination="2V7-TV-WOy" id="y1m-wj-xrh"/>
                         <segue destination="Vjj-M9-yXD" kind="show" identifier="CommentSegue" id="3Wk-zo-lxR"/>
                         <segue destination="uBe-ef-2g2" kind="show" identifier="Home_ProfileSegue" id="tl5-Cp-x7c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="56B-CE-3Fv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-764" y="222.63868065967017"/>
+            <point key="canvasLocation" x="-763" y="267"/>
         </scene>
         <!--ProfileUserViewController-->
         <scene sceneID="bM2-HW-fIG">
@@ -202,7 +208,7 @@
         <!--Comment View Controller-->
         <scene sceneID="s7s-ZJ-pFZ">
             <objects>
-                <viewController storyboardIdentifier="CommentViewController" id="Vjj-M9-yXD" customClass="CommentViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CommentViewController" id="Vjj-M9-yXD" customClass="CommentViewController" customModule="Social" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fil-qH-4Ln"/>
                         <viewControllerLayoutGuide type="bottom" id="LaF-L0-zfD"/>
@@ -215,7 +221,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommentCell" rowHeight="77" id="VSe-Cn-7wa" customClass="CommentTableViewCell" customModule="InstagramClone" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommentCell" rowHeight="77" id="VSe-Cn-7wa" customClass="CommentTableViewCell" customModule="Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VSe-Cn-7wa" id="kLU-AP-PF2">
@@ -269,9 +275,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="commentLabel" destination="j4p-6h-oRO" id="QgJ-9i-T5S"/>
-                                            <outlet property="nameLabel" destination="Ibe-Qj-LON" id="7gM-q2-WNd"/>
-                                            <outlet property="profileImageView" destination="TIW-Bx-GZc" id="gqK-7x-FHV"/>
+                                            <outlet property="commentLabel" destination="j4p-6h-oRO" id="7UY-g9-3c9"/>
+                                            <outlet property="nameLabel" destination="Ibe-Qj-LON" id="fOH-nx-Gm2"/>
+                                            <outlet property="profileImageView" destination="TIW-Bx-GZc" id="6Re-t4-m7r"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -291,9 +297,7 @@
                                             <constraint firstAttribute="width" constant="34" id="Kxp-Y7-jH8"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Send">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <state key="normal" title="Send"/>
                                         <connections>
                                             <action selector="sendButton_TouchUpInside:" destination="Vjj-M9-yXD" eventType="touchUpInside" id="iYv-zG-nVO"/>
                                         </connections>
@@ -325,10 +329,10 @@
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="commentTextField" destination="0o0-rm-Ak5" id="uU4-9D-bd3"/>
-                        <outlet property="constraintToBottom" destination="NwC-0v-LDg" id="EdE-U1-GxH"/>
-                        <outlet property="sendButton" destination="mwi-pH-aou" id="8Vg-w2-59f"/>
-                        <outlet property="tableView" destination="5dC-QO-OgN" id="pb2-qb-faa"/>
+                        <outlet property="commentTextField" destination="0o0-rm-Ak5" id="6wO-da-Qof"/>
+                        <outlet property="constraintToBottom" destination="NwC-0v-LDg" id="SaL-id-5jk"/>
+                        <outlet property="sendButton" destination="mwi-pH-aou" id="oqE-wh-P4g"/>
+                        <outlet property="tableView" destination="5dC-QO-OgN" id="JUx-F6-llI"/>
                         <segue destination="uBe-ef-2g2" kind="show" identifier="Comment_ProfileSegue" id="ic9-fE-QGT"/>
                     </connections>
                 </viewController>
@@ -358,6 +362,14 @@
             </objects>
             <point key="canvasLocation" x="-762" y="-556"/>
         </scene>
+        <!--Chat-->
+        <scene sceneID="27R-Wc-hla">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" id="eMk-62-TPu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJg-FK-Dfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="-556"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Comment" width="43" height="41"/>
@@ -368,6 +380,6 @@
         <image name="share" width="37" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ic9-fE-QGT"/>
+        <segue reference="tl5-Cp-x7c"/>
     </inferredMetricsTieBreakers>
 </document>

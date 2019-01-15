@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Profile View Controller-->
         <scene sceneID="1JQ-0o-HCb">
             <objects>
-                <viewController id="HbS-IN-ciJ" customClass="ProfileViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HbS-IN-ciJ" customClass="ProfileViewController" customModule="Social" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NS3-tb-Nu7"/>
                         <viewControllerLayoutGuide type="bottom" id="A6A-tR-9WX"/>
@@ -31,7 +31,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="dSU-xl-gjh" customClass="PhotoCollectionViewCell" customModule="InstagramClone" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="dSU-xl-gjh" customClass="PhotoCollectionViewCell" customModule="Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="180" width="84" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -54,7 +54,7 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderProfileCollectionReusableView" id="BfR-36-Lpd" customClass="HeaderProfileCollectionReusableView" customModule="InstagramClone" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderProfileCollectionReusableView" id="BfR-36-Lpd" customClass="HeaderProfileCollectionReusableView" customModule="Social" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -101,8 +101,8 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2SA-iW-002">
                                                             <rect key="frame" x="0.0" y="0.0" width="70" height="35"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wr-OI-wWm">
-                                                                    <rect key="frame" x="21.5" y="0.0" width="27" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wr-OI-wWm">
+                                                                    <rect key="frame" x="30" y="0.0" width="10" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -118,8 +118,8 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZkQ-Be-y9X">
                                                             <rect key="frame" x="80" y="0.0" width="70" height="35"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST2-9h-GeN">
-                                                                    <rect key="frame" x="21.5" y="0.0" width="27" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST2-9h-GeN">
+                                                                    <rect key="frame" x="30" y="0.0" width="10" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -135,8 +135,8 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AMj-7Z-dc6">
                                                             <rect key="frame" x="160" y="0.0" width="70" height="35"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mx-8F-8KU">
-                                                                    <rect key="frame" x="21.5" y="0.0" width="27" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mx-8F-8KU">
+                                                                    <rect key="frame" x="30" y="0.0" width="10" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -200,7 +200,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="collectionView" destination="SER-kB-uhd" id="ne8-t0-lK2"/>
+                        <outlet property="collectionView" destination="SER-kB-uhd" id="gl9-Me-eW9"/>
                         <segue destination="CBw-2P-fkl" kind="show" identifier="Profile_SettingSegue" id="pRK-3m-ebY"/>
                         <segue destination="EsZ-9H-OHi" kind="show" identifier="Profile_DetailSegue" id="49u-A6-ntL"/>
                     </connections>
@@ -220,7 +220,7 @@
         <!--People View Controller-->
         <scene sceneID="sXz-Qz-Fs1">
             <objects>
-                <viewController id="L1v-hC-YrY" customClass="PeopleViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="L1v-hC-YrY" customClass="PeopleViewController" customModule="Social" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lbi-9c-Syn"/>
                         <viewControllerLayoutGuide type="bottom" id="syD-BP-Vu2"/>
@@ -233,11 +233,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PeopleTableViewCell" rowHeight="81" id="X7g-eN-8ic" customClass="PeopleTableViewCell" customModule="InstagramClone" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PeopleTableViewCell" rowHeight="81" id="X7g-eN-8ic" customClass="PeopleTableViewCell" customModule="Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X7g-eN-8ic" id="VVo-Nm-coB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bnb-Oo-LDn">
@@ -279,9 +279,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="followButton" destination="TSt-IG-RBi" id="u8B-rB-Nch"/>
-                                            <outlet property="nameLabel" destination="NHD-Zw-gEE" id="3LR-Ln-Cuj"/>
-                                            <outlet property="profileImage" destination="Bnb-Oo-LDn" id="lTq-Fz-nkS"/>
+                                            <outlet property="followButton" destination="TSt-IG-RBi" id="tcF-oq-rX1"/>
+                                            <outlet property="nameLabel" destination="NHD-Zw-gEE" id="VWj-4P-EnG"/>
+                                            <outlet property="profileImage" destination="Bnb-Oo-LDn" id="tB7-Rd-9KF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -299,7 +299,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="dPk-LU-Doo" id="gIT-fI-tXi"/>
+                        <outlet property="tableView" destination="dPk-LU-Doo" id="IAr-ZJ-8o7"/>
                         <segue destination="Cjv-Nm-cZo" kind="show" identifier="ProfileSegue" id="3O5-xw-Qrr"/>
                     </connections>
                 </viewController>
@@ -317,7 +317,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ag4-eu-meK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -332,7 +332,7 @@
         <!--Profile User View Controller-->
         <scene sceneID="Aqo-Cx-qhU">
             <objects>
-                <viewController storyboardIdentifier="ProfileUserViewController" id="Cjv-Nm-cZo" customClass="ProfileUserViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileUserViewController" id="Cjv-Nm-cZo" customClass="ProfileUserViewController" customModule="Social" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nYf-S1-Og7"/>
                         <viewControllerLayoutGuide type="bottom" id="kzC-1r-LKX"/>
@@ -351,7 +351,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="dyS-cs-ifN" customClass="PhotoCollectionViewCell" customModule="InstagramClone" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="dyS-cs-ifN" customClass="PhotoCollectionViewCell" customModule="Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="180" width="84" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -370,11 +370,11 @@
                                             <constraint firstItem="tjv-LX-pKs" firstAttribute="top" secondItem="dyS-cs-ifN" secondAttribute="top" id="lZr-zo-ocO"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="photo" destination="tjv-LX-pKs" id="RnF-Hc-VqU"/>
+                                            <outlet property="photo" destination="tjv-LX-pKs" id="MeI-bk-tT6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderProfileCollectionReusableView" id="uAW-9r-Emo" customClass="HeaderProfileCollectionReusableView" customModule="InstagramClone" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderProfileCollectionReusableView" id="uAW-9r-Emo" customClass="HeaderProfileCollectionReusableView" customModule="Social" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -421,8 +421,8 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QfE-JT-00m">
                                                             <rect key="frame" x="0.0" y="0.0" width="70" height="35"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duQ-1p-hmT">
-                                                                    <rect key="frame" x="21.5" y="0.0" width="27" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duQ-1p-hmT">
+                                                                    <rect key="frame" x="30" y="0.0" width="10" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -438,8 +438,8 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dmX-QO-Aoh">
                                                             <rect key="frame" x="80" y="0.0" width="70" height="35"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOw-4r-DYl">
-                                                                    <rect key="frame" x="21.5" y="0.0" width="27" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOw-4r-DYl">
+                                                                    <rect key="frame" x="30" y="0.0" width="10" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -455,8 +455,8 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kIb-8R-4vc">
                                                             <rect key="frame" x="160" y="0.0" width="70" height="35"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQv-RW-wHO">
-                                                                    <rect key="frame" x="21.5" y="0.0" width="27" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQv-RW-wHO">
+                                                                    <rect key="frame" x="30" y="0.0" width="10" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -494,12 +494,12 @@
                                         <constraint firstItem="QOL-fg-7gu" firstAttribute="top" secondItem="uAW-9r-Emo" secondAttribute="top" constant="15" id="z6q-wk-rkY"/>
                                     </constraints>
                                     <connections>
-                                        <outlet property="followButton" destination="O9N-yp-UH1" id="LLf-9c-rMt"/>
-                                        <outlet property="followersCountLabel" destination="jQv-RW-wHO" id="SUm-am-JOc"/>
-                                        <outlet property="followingCountLabel" destination="aOw-4r-DYl" id="2Xf-vg-Y6T"/>
-                                        <outlet property="myPostsCountLabel" destination="duQ-1p-hmT" id="ZJE-g1-LIE"/>
-                                        <outlet property="nameLabel" destination="icP-n6-Ij4" id="hfR-gc-0P1"/>
-                                        <outlet property="profileImage" destination="yEX-tt-iph" id="5yy-bT-zql"/>
+                                        <outlet property="followButton" destination="O9N-yp-UH1" id="aw2-xb-VPp"/>
+                                        <outlet property="followersCountLabel" destination="jQv-RW-wHO" id="69M-5b-hvA"/>
+                                        <outlet property="followingCountLabel" destination="jQv-RW-wHO" id="pW3-R9-KFh"/>
+                                        <outlet property="myPostsCountLabel" destination="duQ-1p-hmT" id="i9W-CN-KnH"/>
+                                        <outlet property="nameLabel" destination="icP-n6-Ij4" id="FuA-ct-w3u"/>
+                                        <outlet property="profileImage" destination="yEX-tt-iph" id="E54-fX-2nk"/>
                                     </connections>
                                 </collectionReusableView>
                             </collectionView>
@@ -514,7 +514,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Xhc-ib-7DU"/>
                     <connections>
-                        <outlet property="collectionView" destination="a7i-O1-Z9L" id="9Xu-LU-MYN"/>
+                        <outlet property="collectionView" destination="a7i-O1-Z9L" id="zY3-BH-tQz"/>
                         <segue destination="CBw-2P-fkl" kind="show" identifier="ProfileUser_SettingSegue" id="MZn-63-CgU"/>
                         <segue destination="EsZ-9H-OHi" kind="show" identifier="ProfileUser_DetailSegue" id="E1Z-P0-CWT"/>
                     </connections>
@@ -526,7 +526,7 @@
         <!--Setting Table View Controller-->
         <scene sceneID="iGN-F6-snb">
             <objects>
-                <tableViewController id="CBw-2P-fkl" customClass="SettingTableViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="CBw-2P-fkl" customClass="SettingTableViewController" customModule="Social" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="D5U-aR-ymz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -555,7 +555,7 @@
                                     </constraints>
                                     <state key="normal" title="Change Profile Photo"/>
                                     <connections>
-                                        <action selector="changeProfileBtn_TouchUpInside:" destination="CBw-2P-fkl" eventType="touchUpInside" id="WNn-sj-BBu"/>
+                                        <action selector="changeProfileBtn_TouchUpInside:" destination="CBw-2P-fkl" eventType="touchUpInside" id="J7L-9I-ahS"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -575,7 +575,7 @@
                                         <rect key="frame" x="0.0" y="180" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z8E-xp-Do0" id="IEW-Wc-G4h">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j9S-yD-FMP">
@@ -604,7 +604,7 @@
                                         <rect key="frame" x="0.0" y="224" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EeE-uI-9kk" id="fAb-fM-eOD">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UHv-n0-uqC">
@@ -637,7 +637,7 @@
                                         <rect key="frame" x="0.0" y="304" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6tB-1c-VUc" id="ms4-Oc-C5X">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngd-oX-TuF">
@@ -646,7 +646,7 @@
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="saveBtn_TouchUpInside:" destination="CBw-2P-fkl" eventType="touchUpInside" id="7BR-cp-zxu"/>
+                                                        <action selector="saveBtn_TouchUpInside:" destination="CBw-2P-fkl" eventType="touchUpInside" id="UDA-wM-LlA"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -664,7 +664,7 @@
                                         <rect key="frame" x="0.0" y="384" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zKb-2s-nqD" id="YDd-Xc-zXq">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iW-jY-O1E">
@@ -673,7 +673,7 @@
                                                         <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="logoutBtn_TouchUpInside:" destination="CBw-2P-fkl" eventType="touchUpInside" id="ija-Xg-Zye"/>
+                                                        <action selector="logoutBtn_TouchUpInside:" destination="CBw-2P-fkl" eventType="touchUpInside" id="7CY-Nc-yQL"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -692,9 +692,9 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="emailTextField" destination="UHv-n0-uqC" id="IJe-Ol-IpO"/>
-                        <outlet property="profileImageView" destination="e7l-q5-cQS" id="k6c-vM-2VD"/>
-                        <outlet property="usernnameTextField" destination="j9S-yD-FMP" id="BDL-gC-zr1"/>
+                        <outlet property="emailTextField" destination="UHv-n0-uqC" id="Mfe-cO-zC1"/>
+                        <outlet property="profileImageView" destination="e7l-q5-cQS" id="A6A-pw-4S6"/>
+                        <outlet property="usernnameTextField" destination="j9S-yD-FMP" id="Oq3-hK-ld8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAP-LT-g16" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -709,7 +709,7 @@
         <image name="placeholderImg" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pRK-3m-ebY"/>
+        <segue reference="MZn-63-CgU"/>
         <segue reference="49u-A6-ntL"/>
     </inferredMetricsTieBreakers>
 </document>

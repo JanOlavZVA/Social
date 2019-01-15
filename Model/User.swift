@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Users {
+class User {
     var email: String?
     var profileImageUrl: String?
     var username: String?
@@ -15,13 +15,13 @@ class Users {
     var isFollowing: Bool?
 }
 
-extension Users {
-    static func transformUser(dict: [String: Any], key: String) -> Users {
-        let users = Users()
-        users.email = dict["email"] as? String
-        users.profileImageUrl = dict["profileImageUrl"] as? String
-        users.username = dict["username"] as? String
-        users.id = key
-        return users
+extension User {
+    static func transformUser(dict: [String: Any], key: String) -> User {
+        let user = User()
+        user.email = dict["email"] as? String
+        user.profileImageUrl = dict["profileImageUrl"] as? String
+        user.username = dict["username"] as? String
+        user.id = key
+        return user
     }
 }
